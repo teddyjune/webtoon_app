@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:webtoon_app/screens/main_screen.dart';
-import 'package:webtoon_app/services/api_service.dart';
 
 void main() {
-  ApiService().getTodaysToons();
   runApp(const MyApp());
 }
 
@@ -18,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MainScreen(),
+      home: MainScreen(),
     );
   }
 }
